@@ -1,0 +1,21 @@
+mixin case-main
+    +b.case-main.wrap
+        +b.case-main-content.container
+            +b.IMG.case-main__logo(src="./img/logo-case.svg")
+            +b.title-default-block
+                    +e.P.title Riviera villas - коттеджный-#[span городок под киевом]
+                    +e.P.desc.text_gray Считаем рентабельность инвестиций в рекламу правильно!
+
+            +b.reviews-item
+                +e.avatar
+                    img(src="./img/avatar.png", alt="")
+                +e.P.title.title_small-thin Можно ли при помощи рекламы в социальных сетях продать дом?
+                +e.P.text.text_regular.text_gray Значимость этих проблем настолько очевидна, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных Повседневная практика показывает, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позици
+                +e.footer
+                    +e.info
+                        +e.P.name.title_small Яровой Даниил
+                        +e.P.position СЕО, STAR MEDIA
+            +b.tumbler 
+                input#bopis.on-off-toggle__input(type='checkbox')
+                label.on-off-toggle__slider(for='bopis')
+                +e.P Switch On

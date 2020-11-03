@@ -1,0 +1,35 @@
+mixin service-item-main
+    +b.service-item-main.wrap
+        +b.service-item-main-content.container
+            +b.title-default-block.about-title
+                +e.P.title Наши-#[span контакты]
+                +e.P.desc Успешные кейсы с конкретным описанием пошаговых действий. Рассказываем о комплексном применении маркетинговых инструментов и достижении поставленных целей.
+                +b.btn-block
+                    +b.A.yellow-btn(href="") Обсудить задачу
+                    +b.tumbler 
+                        input#bopis.on-off-toggle__input(type='checkbox')
+                        label.on-off-toggle__slider(for='bopis')
+                        +e.P Switch On
+            +b.contacts-page__img-block.first-service__animation
+                +b.animation-block.white
+                    img.lap-top(src="./img/Notebook_animated.svg", alt="alt")
+                    img.second-window(src="./img/second-window_white.svg", alt="alt")
+                    img.first-window(src="./img/first-window_white.svg", alt="alt")
+                    +b.gear-block
+                        img.gear(src="./img/gear.svg", alt="alt")
+            +b.contacts-page__img-block.second-service__animation
+                +b.animation-block.white
+                    img.lap-top(src="./img/Notebook_animated.svg", alt="alt")
+                    img.second-window(src="./img/third-window_white.svg", alt="alt")
+                    img.first-window(src="./img/fourth-window_white.svg", alt="alt")
+                    img.third-window(src="./img/fifth-window_white.svg", alt="alt")
+                    +b.shout-block
+                        img.shout(src="./img/shout.svg", alt="alt")
+            +b.contacts-page__img-block.third-service__animation
+                +b.animation-block.white
+                    img.lap-top(src="./img/Notebook_animated.svg", alt="alt")
+                    img.third-window(src="./img/eight-window_white.svg", alt="alt")
+                    img.second-window(src="./img/six-window_white.svg", alt="alt")
+                    img.first-window(src="./img/seven-window_white.svg", alt="alt")
+                    +b.target-block
+                        img.target(src="./img/target.svg", alt="alt")

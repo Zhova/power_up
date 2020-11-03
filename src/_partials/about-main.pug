@@ -1,0 +1,15 @@
+mixin about-main
+    +b.about-main.wrap
+        +b.about-main-content.container
+            +b.title-default-block.about-title
+                +e.P.title Наши-#[span контакты]
+                +e.P.desc Успешные кейсы с конкретным описанием пошаговых действий. Рассказываем о комплексном применении маркетинговых инструментов и достижении поставленных целей.
+                +b.btn-block
+                    +b.A.yellow-btn(href="") Обсудить задачу
+                    +b.tumbler 
+                        input#bopis.on-off-toggle__input(type='checkbox')
+                        label.on-off-toggle__slider(for='bopis')
+                        +e.P Switch On
+            +b.about__img-block
+                img.rock-white.about-rock(src="./img/rock-white.png", alt="")
+                img.rock-dark.about-rock(src="./img/rock-dark.png", alt="")

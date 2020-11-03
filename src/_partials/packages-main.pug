@@ -1,0 +1,18 @@
+include ./packages-card.pug
+
+mixin packages-main
+    +b.packages-main.wrap
+        +b.packages-main-content.container
+            +b.title-default-block.title_center
+                +e.P.title Кейсы с нашими #[span клиентами]
+                +e.P.desc Успешные кейсы с конкретным описанием пошаговых действий. Рассказываем о комплексном применении маркетинговых инструментов и достижении поставленных целей.
+                +b.tumbler 
+                    input#bopis.on-off-toggle__input(type='checkbox')
+                    label.on-off-toggle__slider(for='bopis')
+                    +e.P Switch On
+            +b.packages-main__cards-block
+                +packages-card
+                +packages-card
+                +packages-card
+                +packages-card
+            +b.A.btn-comparison Подробное сравнение пакетов 

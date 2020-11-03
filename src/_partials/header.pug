@@ -1,0 +1,22 @@
+mixin header
+	+b.HEADER.header.wrap
+		+b.header-container.container
+			+b.header-logo
+				a(href="/") 
+					img(src="./img/logo.png", alt="")
+			+b.NAV.header-nav
+				+b.UL.nav-list
+					+e.LI.item
+						a.text_middle(href="#") О НАС
+					+e.LI.item 
+						a.text_middle(href="#") УСЛУГИ И ЦЕНЫ
+					+e.LI.item 
+						a.text_middle(href="#") КЕЙСЫ
+					+e.LI.item 
+						a.text_middle(href="#") КОНТАКТЫ
+				+b.header-lang
+					+e.lang RU
+			+b.burger
+				+e.line
+				+e.line
+				+e.line

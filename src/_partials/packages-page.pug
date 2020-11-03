@@ -1,0 +1,13 @@
+include ./packages-main.pug
+include ./packages-command.pug
+include ./packages-detail.pug
+include ./reviews_screen.pug
+include ./contacts_screen.pug
+
+
+mixin packages-page
+    +packages-main
+    +packages-command
+    +packages-detail
+    +reviews_screen 
+    +contacts_screen

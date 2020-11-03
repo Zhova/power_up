@@ -1,0 +1,97 @@
+include bemto/bemto.pug
+
+//- include partials
+//- Хедер
+include _partials/header.pug
+
+include _partials/main_screen.pug
+
+include _partials/services_screen.pug
+
+include _partials/marketing_screen.pug
+
+include _partials/choice_screen.pug
+
+include _partials/reviews_screen.pug
+
+include _partials/cases_screen.pug
+
+include _partials/contacts_screen.pug
+
+include _partials/cases-page.pug
+
+include _partials/contacts-page.pug
+
+include _partials/case_item-page.pug
+
+include _partials/packages-page.pug
+
+include _partials/error-page.pug
+
+include _partials/about-page.pug
+
+include _partials/service-item-page.pug
+
+//- Футер
+include _partials/footer.pug
+
+
+
+doctype html 
+html
+	head
+		link(rel="shortcut icon" href="img/fav-redpix.png" type="image/png")
+		title title
+		
+		//- include style.css
+		link(rel="stylesheet" type="text/css" href="css/all_style.css")
+
+		link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css")
+		//- include animate.css
+		//- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+		<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+	body
+		+header
+		//- home page
+		//- +main_screen
+		//- +services_screen
+		//- +marketing_screen
+		//- +choice_screen
+		//- +reviews_screen
+		//- +cases_screen
+		//- +contacts_screen
+
+		//- cases page
+		//- +cases-page
+		//- +contacts_screen
+
+		//- contacts page
+		//- +contacts-page
+
+		//- case item page
+		//- +case_item-page
+
+		//- +packages-page
+
+		//- +error-page
+
+		//- +about-page
+
+		+service-item-page
+
+		+footer
+
+
+
+
+		//- wow js
+		//- script(src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js")
+		//- script new WOW().init();
+		//- libs js
+		script(type="text/javascript" src="js/all_libs.js")
+		script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+		//- js
+		script(type="text/javascript" src="js/all_js.js")

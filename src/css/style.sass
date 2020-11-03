@@ -1,0 +1,1979 @@
+
+$yellow: #FFC200
+
+*, *:after, *:before
+	box-sizing: border-box
+	font-family: 'Mulish', sans-serif
+	padding: 0
+	margin: 0
+	text-decoration: none
+	color: inherit
+	max-width: 100%
+	font-weight: 300
+	outline: none
+body
+	color: #2C2C2C
+	overflow-x: hidden
+
+ul
+	li
+		list-style: none
+
+p,h1,h2,h3,h4,h5,h6
+	cursor: default
+
+.wrap
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.container
+	width: 85%
+	max-width: 1180px
+
+.btn-application
+	background: #FFFFFF
+	border: 1px solid #FFC200
+	box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+	border-radius: 70px
+	width: 210px
+	height: 51px
+	display: flex
+	align-items: center
+	justify-content: center
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
+	bottom: -25px
+	font-weight: bold
+	transition: .3s
+	&:hover
+		background: $yellow
+		color: #ffffff
+		transition: .3s
+
+.yellow-btn
+	width: 237px
+	height: 51px
+	background: $yellow
+	box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+	border-radius: 70px
+	display: flex
+	align-items: center
+	padding-left: 28px
+	color: #fff
+	position: relative
+	text-transform: uppercase
+	&::after
+		content: ''
+		background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.379548 0.171065C0.151479 0.399135 0.151479 0.767802 0.379548 0.995872L6.38367 7.00002L0.379548 13.0041C0.151479 13.2322 0.151479 13.6009 0.379548 13.8289C0.607617 14.057 0.976286 14.057 1.20435 13.8289L7.6209 7.41241C7.73464 7.29866 7.79182 7.14934 7.79182 6.99999C7.79182 6.85064 7.73464 6.70132 7.6209 6.58758L1.20436 0.171038C0.976286 -0.0570049 0.607618 -0.057004 0.379548 0.171065Z' fill='white'/%3E%3C/svg%3E")
+		position: absolute
+		right: 30px
+		top: 50%
+		transform: translateY(-50%)
+		height: 14px
+		width: 8px
+
+span
+	color: $yellow
+	font-weight: inherit
+
+.slick
+	&-slider
+		*
+			max-width: none
+	&-custom-arrow
+		z-index: 100
+		padding: 7px 12px
+		background-image: url("data:image/svg+xml,%3Csvg width='23' height='14' viewBox='0 0 23 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.3118 6.03471L22.3108 6.03367L16.5694 0.319964C16.1393 -0.10807 15.4436 -0.106477 15.0154 0.3237C14.5873 0.753821 14.589 1.44952 15.0191 1.87761L18.8739 5.7137H1.46402C0.857163 5.7137 0.365234 6.20563 0.365234 6.81249C0.365234 7.41935 0.857163 7.91128 1.46402 7.91128H18.8738L15.0192 11.7474C14.589 12.1755 14.5874 12.8712 15.0155 13.3013C15.4436 13.7315 16.1394 13.733 16.5694 13.305L22.3108 7.59131L22.3118 7.59027C22.7422 7.16075 22.7408 6.4628 22.3118 6.03471Z' fill='%232C2C2C'/%3E%3C/svg%3E%0A")
+		background-repeat: no-repeat
+		&-wrap
+			position: absolute
+			cursor: pointer
+			background: #FFFFFF
+			border: 1px solid #FFC200
+			border-radius: 70px
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 50px
+			height: 50px
+
+			&-right
+				top: 50%
+				transform: translateY(-50%)
+				right: -50px
+				box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+
+			&-left
+				transform: rotate(180deg) translateY(5%)
+				left: -50px
+				top: 34%
+				box-shadow: 0px -25px 30px rgba(0, 0, 0, 0.07)
+.title_center
+	display: flex
+	flex-direction: column
+	align-items: center
+	.title-default-block
+		&__desc,
+		&__title
+			text-align: center
+
+.title-default-block
+	&__title
+		font-weight: 700
+		font-size: 48px
+		line-height: 60px
+		margin-bottom: 30px
+	&__desc
+		font-weight: normal
+		font-size: 16px
+		line-height: 22px
+		max-width: 420px
+.text_gray
+	color: #555555
+
+.title_small,
+.title_small span
+	font-weight: 700
+	font-size: 20px
+	line-height: 49px
+
+.title_middle,
+.title_middle span
+	font-weight: 600
+	font-size: 36px
+	line-height: 45px
+
+.title_small,
+.title_small span
+	font-weight: 700
+	font-size: 24px
+	line-height: 30px
+
+.title_regular,
+.title_regular span
+	font-weight: 900
+	font-size: 18px
+	line-height: 23px
+
+.title_micro
+	font-weight: bold
+	font-size: 16px
+	line-height: 19px
+
+.title_small-thin
+	font-weight: 600
+	font-size: 18px
+	line-height: 23px
+
+.text_regular
+	font-weight: normal
+	font-size: 16px
+	line-height: 22px
+
+.text_small
+	font-weight: 700
+	font-size: 14px
+	line-height: 18px
+
+.text_small-thin
+	font-weight: normal
+	font-size: 14px
+	line-height: 18px
+
+.text_middle
+	font-weight: 600
+	font-size: 16px
+	line-height: 20px
+
+.tumbler
+	display: flex
+	align-items: center
+	margin-left: 15px
+.on-off-toggle
+	width: 56px
+	height: 24px
+	position: relative
+	display: inline-block
+	&__slider
+		width: 102px
+		height: 51px
+		display: block
+		border-radius: 25px
+		background-color: #232323
+		transition: background-color 0.4s
+		position: relative
+		box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+		border: 1px solid #232323
+		margin: 0 15px
+		cursor: pointer
+		&:before
+			content: ''
+			display: block
+			background-color: $yellow
+			bottom: 3px
+			height: 43px
+			width: 43px
+			right: 3px
+			position: absolute
+			transition: .4s
+			z-index: 5
+			border-radius: 100%
+		&:after
+			display: block
+			transition: all 0.4s
+			padding-left: 8px
+		.on-off-toggle__input
+			position: absolute
+			opacity: 0
+	&__input
+		display: none
+		&:checked
+			& + .on-off-toggle__slider
+				background-color: #fff
+				border: 1px solid #000
+				&:before
+					transform: translateX(-49px)
+					background: $yellow
+
+.more
+	color: $yellow
+	position: relative
+	font-weight: 600
+	font-size: 14px
+	line-height: 18px
+	text-transform: uppercase
+	&::after
+		content: ''
+		position: absolute
+		right: -20px
+		top: 15%
+		width: 9px
+		height: 15px
+		background-size: cover
+		background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.413684 0.12219C0.250777 0.285096 0.250777 0.54843 0.413684 0.711337L4.70234 5.00001L0.413684 9.28867C0.250777 9.45158 0.250777 9.71491 0.413684 9.87782C0.576591 10.0407 0.839925 10.0407 1.00283 9.87782L5.58608 5.29458C5.66732 5.21333 5.70816 5.10667 5.70816 4.99999C5.70816 4.89332 5.66732 4.78666 5.58608 4.70541L1.00283 0.12217C0.839925 -0.0407171 0.576591 -0.0407171 0.413684 0.12219Z' fill='%23FFC200'/%3E%3C/svg%3E%0A")
+.header
+	height: 40px
+	padding-top: 20px
+	position: absolute
+	z-index: 99
+	&-container
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-nav
+		display: flex
+		align-items: center
+		width: 50%
+		justify-content: flex-end
+
+	.nav-list
+		display: flex
+		justify-content: space-around
+
+		&__item
+			margin-right: 30px
+
+	.burger
+		display: none
+		width: 40px
+		z-index: 9999
+		&__line
+			width: 100%
+			height: 4px
+			background: #707070
+			border-radius: 32px
+			margin-bottom: 5px
+			transform-origin: 20% 50%
+			transition: .5s
+			&:nth-child(2)
+				&.active
+					opacity: 0
+					transition: .5s
+			&:nth-child(1)
+				&.active
+					transform: rotate(45deg)
+					transition: .5s
+			&:nth-child(3)
+				&.active
+					transform: rotate(-45deg)
+					transition: .5s
+
+.main
+	padding-top: 140px
+	padding-bottom: 57px
+	background: rgba(0, 0, 0, 0.07)
+	background: url('../img/mainBG.png')
+	background-size: cover
+	position: relative
+	img
+		width: 100%
+
+	&__title
+		display: block
+	&__title_dark
+		display: none
+
+	&__second-block
+		display: flex
+		justify-content: space-between
+		margin-bottom: 88px
+	&__sub-block
+		margin-top: 65px
+
+	&__sub-title,.main__sub-title span
+		font-size: 64px
+		line-height: 60px
+		font-weight: bold
+
+	&__sub-title
+		margin-bottom: 42px
+		span
+			display: block
+
+	&__btn-block
+		display: flex
+		align-items: center
+
+	&__lamp
+		&_white
+			display: none
+		&-block
+			padding-right: 150px
+			padding-top: 35px
+			position: relative
+
+	&__video-link
+		background: url('../img/video-link.svg')
+		width: 68px
+		height: 68px
+		display: block
+		position: absolute
+		right: 150px
+		bottom: 0
+
+	.partner-slider
+		.slick-slide
+			display: flex
+			justify-content: center
+			padding: 50px 0
+		&__item
+			max-width: 175px
+			filter: drop-shadow(0px 25px 30px rgba(0, 0, 0, 0.07))
+
+.services
+	background: url('../img/servicesBG.png')
+	background-size: cover
+	padding-top: 137px
+	padding-bottom: 120px
+	&-title
+		text-align: right
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		margin-bottom: 15px
+
+	&-list
+		display: flex
+		justify-content: space-between
+		align-items: end
+		&__item
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			border-radius: 10px 10px 10px 10px
+			background: #FFFFFF
+			border: 1px solid #EEEEEE
+			width: 32%
+			max-width: 362px
+			padding: 80px 34px
+			padding-bottom: 45px
+			transition: .5s
+			overflow: hidden
+
+			&:first-child
+				margin-top: -50px
+				border-radius: 120px 10px 10px 10px
+			&:last-child
+				margin-top: 50px
+				border-radius: 10px 10px 120px 10px
+
+			&:hover
+				transform: scale(1.06)
+				transition: .5s
+				border: 1px solid #EEEEEE
+				border-bottom: 10px solid $yellow
+
+		&__img
+			margin-bottom: 25px
+		&__title
+			margin-bottom: 15px
+		&__desc
+			margin-bottom: 25px
+
+.marketing,
+.choice
+	padding: 210px 0
+	padding-bottom: 135px
+	background: url('../img/marketingBG.png')
+	background-size: cover
+
+	&-title
+		text-align: center
+		max-width: 790px
+		margin: 0 auto
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 35px
+		.title-default-block__desc
+			max-width: 624px
+	&-working
+		display: flex
+		align-items: center
+		justify-content: space-around
+	&-info
+		width: 50%
+		// margin-right: 130px
+		max-width: 460px
+		display: flex
+		justify-content: center
+		&__item
+			display: none
+			&:first-child
+				display: block
+		&__title
+			margin-bottom: 30px
+			span
+				display: block
+
+		&__desc
+			margin-bottom: 25px
+	&-list
+		width: 50%
+		display: flex
+		flex-wrap: wrap
+		&__item
+			background: #FFFFFF
+			border: 1px solid #EEEEEE
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			border-radius: 10px 10px 10px 10px
+			max-width: 47%
+			margin-bottom: 40px
+			padding: 0 48px
+			padding-top: 30px
+			padding-bottom: 20px
+			display: flex
+			flex-direction: column
+			align-items: center
+			border-bottom: 10px solid transparent
+			transition: .5s
+			text-align: center
+			cursor: pointer
+
+			&:first-child
+				border-radius: 80px 10px 10px 10px
+			&:last-child
+				border-radius: 10px 10px 80px 10px
+			&:nth-child(2n + 1)
+				margin-right: 30px
+
+			&.pre-active
+				transition: .5s
+				transform: scale(1.06)
+			&.active
+				border-bottom: 10px solid $yellow
+				transition: .5s
+			&:hover
+				transition: .5s
+				transform: scale(1.06)
+			p
+				cursor: pointer
+		&__img
+			margin-bottom: 20px
+			max-width: 50px
+.marketing-list__title
+	font-weight: 600
+	font-size: 15px
+	line-height: 20px
+	max-width: 155px
+
+.choice
+	background: url('../img/choiceBG.png')
+	background-size: cover
+	padding: 115px
+	padding-bottom: 50px
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		background: url('../img/rounds_back.png')
+		height: 490px
+		width: 685px
+		background-repeat: no-repeat
+		background-size: contain
+		right: 20%
+	&-content
+		position: relative
+		z-index: 1
+	&-title
+		margin-bottom: 25px
+	&-list
+		width: 50%
+		display: flex
+		flex-direction: column
+		&__item
+			background: #FFFFFF
+			border-radius: 10px
+			max-width: 470px
+			margin-bottom: 20px
+			padding: 0 46px
+			padding-top: 25px
+			padding-bottom: 30px
+			border-left: 10px solid transparent
+			text-align: left
+			align-items: flex-start
+
+			&:first-child
+				border-radius: 10px
+			&:last-child
+				border-radius: 10px
+			&:nth-child(2n + 1)
+				margin-right: 0
+
+			&.active
+				border-left: 10px solid $yellow
+				transition: .5s
+				border-bottom: 0
+
+			&:hover
+				transition: .5s
+				transform: scale(1.06)
+				border-left: 10px solid $yellow
+
+		&__title
+			max-width: none
+			margin-bottom: 8px
+	&-slider
+		display: none !important
+
+.reviews
+	padding-top: 50px
+	padding-bottom: 130px
+	background: url('../img/reviewsBG.png')
+	background-size: cover
+	&-content
+		position: relative
+	&-title
+		margin-bottom: 85px
+		max-width: 450px
+		padding-left: 20px
+	&-slider
+		.slick-slide
+			padding: 50px 20px
+		.slick-custom-arrow-wrap-right
+			bottom: -50px
+			top: auto
+			left: 120px
+			transform: translateY(0)
+		.slick-custom-arrow-wrap-left
+			bottom: -50px
+			top: auto
+			left: 20px
+			transform: translateY(0) rotate(180deg)
+		&__item
+			background: #fff
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			border-radius: 30px
+			padding: 50px
+			padding-top: 66px
+			position: relative
+		&__avatar
+			position: absolute
+			right: 50px
+			top: -15%
+
+		&__text
+			margin-bottom: 11px
+			position: relative
+			&::after
+				content: ''
+				width: 100%
+				height: 50%
+				position: absolute
+				background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+				left: 0
+				bottom: 0
+		&__name
+			margin-bottom: 6px
+		&__position
+			color: $yellow
+		&__footer
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+		.btn-more
+			background-image: url("data:image/svg+xml,%3Csvg width='100' height='113' viewBox='0 0 100 113' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)' filter='url(%23filter0_d)'%3E%3Cg filter='url(%23filter1_d)'%3E%3Cpath d='M50 18C38.972 18 30 26.972 30 38C30 49.028 38.972 58 50 58C61.028 58 70 49.028 70 38C70 26.972 61.028 18 50 18ZM40.303 41.0303C38.6321 41.0303 37.2727 39.6709 37.2727 38C37.2727 36.3291 38.6321 34.9697 40.303 34.9697C41.9739 34.9697 43.3333 36.3291 43.3333 38C43.3333 39.6709 41.9739 41.0303 40.303 41.0303ZM50 41.0303C48.3291 41.0303 46.9697 39.6709 46.9697 38C46.9697 36.3291 48.3291 34.9697 50 34.9697C51.6709 34.9697 53.0303 36.3291 53.0303 38C53.0303 39.6709 51.6709 41.0303 50 41.0303ZM59.697 41.0303C58.0261 41.0303 56.6667 39.6709 56.6667 38C56.6667 36.3291 58.0261 34.9697 59.697 34.9697C61.3679 34.9697 62.7273 36.3291 62.7273 38C62.7273 39.6709 61.3679 41.0303 59.697 41.0303Z' fill='%23FFC200'/%3E%3C/g%3E%3C/g%3E%3Cpath opacity='0.1' d='M78.5 38C78.5 53.7168 65.5397 66.5 49.5 66.5C33.4603 66.5 20.5 53.7168 20.5 38C20.5 22.2832 33.4603 9.5 49.5 9.5C65.5397 9.5 78.5 22.2832 78.5 38Z' stroke='%23FFC200' stroke-width='3'/%3E%3Ccircle opacity='0.05' cx='50' cy='38' r='36.5' stroke='%23FFC200' stroke-width='3'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0' y='13' width='100' height='100' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='25'/%3E%3CfeGaussianBlur stdDeviation='15'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3Cfilter id='filter1_d' x='0' y='13' width='100' height='100' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='25'/%3E%3CfeGaussianBlur stdDeviation='15'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3CclipPath id='clip0'%3E%3Crect width='40' height='40' fill='white' transform='translate(30 18)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+			background-position-x: center
+			display: block
+			width: 76px
+			height: 76px
+
+	.yellow-btn
+		position: absolute
+		right: 0
+		bottom: -50px
+
+.cases
+	padding: 140px 0
+	background: url('../img/casesBG.png')
+	background-size: cover
+	&-title
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 30px
+		.title-default-block__desc
+			max-width: 450px
+			text-align: center
+	&-slider
+		.slick-custom-arrow-wrap-right
+			bottom: -45px
+			top: auto
+			left: 25%
+			transform: translateY(0)
+		.slick-custom-arrow-wrap-left
+			bottom: -45px
+			top: auto
+			left: 18%
+			transform: translateY(0) rotate(180deg)
+		&__item
+			display: flex !important
+			padding: 40px 20px
+		&__img-block
+			width: 48%
+			height: 415px
+			margin-right: 67px
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			border-radius: 30px
+			overflow: hidden
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%
+		&__info
+			width: 48%
+			padding-top: 40px
+
+		&__title
+			margin-bottom: 22px
+		&__text
+			margin-bottom: 50px
+			position: relative
+			&::after
+				content: ''
+				width: 100%
+				height: 50%
+				position: absolute
+				background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+				left: 0
+				bottom: 0
+	.discussion-btn
+		margin-top: 150px
+
+.contacts
+	background: url('../img/contactsBG.png')
+	background-size: cover
+	padding-top: 100px
+	padding-bottom: 140px
+	position: relative
+
+	&-content
+		display: flex
+		position: relative
+		z-index: 1
+	&-form-block
+		box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+		border-radius: 30px
+		background: #fff
+		width: 100%
+		max-width: 460px
+		padding: 40px 50px
+		margin-right: 130px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			background: url('../img/form-rounds.png')
+			width: 180px
+			height: 600px
+			background-size: cover
+			right: -180px
+
+		&__title
+			font-weight: 700
+			font-size: 30px
+			line-height: 49px
+			margin-bottom: 20px
+
+		.form
+			display: flex
+			flex-direction: column
+			label
+				margin-bottom: 15px
+
+			input,textarea
+				background: #FAFAFA
+				border: 1px solid #EEEEEE
+				border-radius: 6px
+				resize: none
+				width: 100%
+				padding: 0 20px
+				margin-bottom: 25px
+			input
+				height: 42px
+			textarea
+				height: 66px
+				padding-top: 10px
+			#send-btn
+				width: 237px
+				height: 51px
+				background: $yellow
+				box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+				border-radius: 70px
+				display: flex
+				align-items: center
+				justify-content: center
+				color: #fff
+				position: absolute
+				bottom: -8%
+				left: 50%
+				transform: translateX(-50%)
+				cursor: pointer
+				font-size: 14px
+
+	&-info
+		width: 48%
+		padding-top: 40px
+		&__item
+			position: relative
+			margin-left: 20px
+			&::before
+				content: ''
+				position: absolute
+				left: -20px
+				top: 50%
+				transform: translateY(-50%)
+				background-repeat: no-repeat
+	&-phone-mail
+		display: flex
+		margin-bottom: 20px
+		&__phone
+			margin-right: 20px
+			&::before
+				background-image: url("data:image/svg+xml,%3Csvg width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.78656 0H2.21321C1.48841 0 0.90332 0.587712 0.90332 1.3112V16.6901C0.90332 17.4129 1.48841 18 2.21321 18H9.78656C10.5101 18 11.0965 17.4129 11.0965 16.6901V1.3112C11.0965 0.587712 10.5101 0 9.78656 0ZM4.13115 0.796298H7.86994C7.9644 0.796298 8.04114 0.937322 8.04114 1.1118C8.04114 1.28628 7.9644 1.42796 7.86994 1.42796H4.13115C4.03604 1.42796 3.96061 1.28628 3.96061 1.1118C3.96061 0.937322 4.03604 0.796298 4.13115 0.796298ZM6.00054 16.7059C5.53943 16.7059 5.16423 16.3307 5.16423 15.8689C5.16423 15.4071 5.53943 15.0332 6.00054 15.0332C6.46035 15.0332 6.83554 15.4071 6.83554 15.8689C6.83554 16.3307 6.46035 16.7059 6.00054 16.7059ZM10.1152 13.8401H1.88525V2.21245H10.1152V13.8401Z' fill='%23FFC200'/%3E%3C/svg%3E%0A")
+				width: 11px
+				height: 18px
+		&__email
+			&::before
+				background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.9861 1.87757C17.9861 1.857 18.0003 1.83698 17.9993 1.81665L12.5063 7.10943L17.9928 12.2331C17.996 12.1965 17.9861 12.1596 17.9861 12.1223V1.87757Z' fill='%23FFC200'/%3E%3Cpath d='M11.6688 7.92352L9.42636 10.081C9.31289 10.1902 9.16634 10.2449 9.01971 10.2449C8.87613 10.2449 8.73254 10.1925 8.61985 10.0875L6.38356 8.0036L0.861328 13.3264C0.995603 13.3747 1.13973 13.4121 1.29066 13.4121H16.7488C16.973 13.4121 17.1832 13.3439 17.3659 13.242L11.6688 7.92352Z' fill='%23FFC200'/%3E%3Cpath d='M9.0126 8.8511L17.3957 0.775767C17.2059 0.66292 16.9849 0.587219 16.7481 0.587219H1.28997C0.981615 0.587219 0.699067 0.706948 0.479004 0.889553L9.0126 8.8511Z' fill='%23FFC200'/%3E%3Cpath d='M0 2.07428V12.1221C0 12.2375 0.0265108 12.3487 0.0552896 12.455L5.50902 7.20315L0 2.07428Z' fill='%23FFC200'/%3E%3C/svg%3E%0A")
+				width: 20px
+				height: 14px
+				left: -25px
+	&__address
+		margin-bottom: 46px
+		&::before
+			background-image: url("data:image/svg+xml,%3Csvg width='14' height='18' viewBox='0 0 14 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.85547 0C3.07547 0 0 3.07547 0 6.85547C0 8.35137 0.4725 9.77274 1.36758 10.9652L6.43289 17.7873C6.44555 17.8039 6.46488 17.8102 6.47895 17.825C6.73207 18.096 7.09735 18.0278 7.2777 17.7873C8.73633 15.8411 11.41 12.2063 12.4379 10.8352C12.4379 10.8352 12.4383 10.8341 12.4386 10.8334L12.445 10.825C13.2732 9.66129 13.7109 8.28879 13.7109 6.85547C13.7109 3.07547 10.6355 0 6.85547 0ZM6.85547 10.5539C4.82027 10.5539 3.15703 8.89067 3.15703 6.85547C3.15703 4.82027 4.82027 3.15703 6.85547 3.15703C8.89067 3.15703 10.5539 4.82027 10.5539 6.85547C10.5539 8.89067 8.89067 10.5539 6.85547 10.5539Z' fill='%23FFC200'/%3E%3C/svg%3E%0A")
+			width: 14px
+			height: 18px
+	.map-block
+		height: 348px
+		border-radius: 8px
+		overflow: hidden
+
+.footer
+	background: #E8E8E8
+	padding-top: 80px
+	padding-bottom: 40px
+	&-wrap
+		display: flex
+	&-logo
+		margin-right: 160px
+		img
+			max-width: 270px
+		li
+			list-style: none
+		&__title
+			font-weight: 900
+			font-size: 48px
+			line-height: 60px
+		&__sub-title
+			font-weight: bold
+			font-size: 30px
+			line-height: 30px
+			margin-top: 30px
+			margin-bottom: 20px
+			span
+				display: block
+
+	&-nav
+		display: flex
+		justify-content: space-between
+		margin-bottom: 22px
+		width: 60%
+		&-item
+			&__title
+				margin-bottom: 15px
+
+			&__list-item
+				margin-bottom: 10px
+				opacity: .8
+
+	&-copyright
+		text-align: center
+
+.cases-page
+	padding-top: 140px
+	padding-bottom: 100px
+	background: url('../img/cases-pageBG.png')
+	background-size: cover
+	.title-default-block
+		display: flex
+		align-items: center
+		flex-direction: column
+		text-align: center
+		margin-bottom: 60px
+		&__desc
+			max-width: 540px
+			margin-bottom: 25px
+	&-list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&-item
+			border: 1px solid #EEEEEE
+			background: #fff
+			border-radius: 30px
+			width: 32%
+			overflow: hidden
+			margin-bottom: 40px
+			padding-bottom: 30px
+			&__img-block
+				width: 100%
+				position: relative
+				height: 50%
+				&::after
+					content: ''
+					width: 100%
+					height: 50%
+					position: absolute
+					background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+					left: 0
+					bottom: 0
+				img
+					object-fit: cover
+					width: 100%
+					height: 100%
+			&__title,&__desc,&__footer
+				padding: 0 23px
+				margin-bottom: 20px
+
+			&__footer
+				display: flex
+				align-items: center
+				justify-content: space-between
+
+.contacts
+	&-page
+		&-main-wrap
+			background: url('../img/contacts-pageBG.png')
+			background-size: cover
+			padding-top: 290px
+			padding-bottom: 180px
+		&-main
+			display: flex
+			justify-content: space-between
+			.title-default-block
+				&__title
+					margin-bottom: 10px
+				&__desc
+					margin-bottom: 15px
+			.tumbler
+				margin-left: 0
+				.on-off-toggle__slider
+					margin-left: 0
+			.map-dark
+				display: none
+		&-second-wrap
+			background: url('../img/contacts-page-secondBG.png')
+			background-size: cover
+			padding-top: 100px
+			padding-bottom: 180px
+		&__form-info
+			display: flex
+			margin-bottom: 100px
+		&__map-block
+			height: 500px
+			border-radius: 8px
+			overflow: hidden
+	&-info
+		&-block
+			position: relative
+			&__item
+				border-bottom: 1px solid rgba(44, 44, 44, .5)
+				padding-bottom: 25px
+				margin-bottom: 25px
+				padding-left: 50px
+				position: relative
+		&-tel,&-mail,&-address
+			&::before
+				content: ''
+				position: absolute
+				top: 30%
+				transform: translateY(-50%)
+		&-tel
+			&::before
+				background-image: url("data:image/svg+xml,%3Csvg width='29' height='30' viewBox='0 0 29 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.6 0H8.39846C7.23073 0 6.28809 0.97952 6.28809 2.18534V27.8168C6.28809 29.0216 7.23073 30 8.39846 30H20.6C21.7656 30 22.7104 29.0216 22.7104 27.8168V2.18534C22.7104 0.97952 21.7656 0 20.6 0ZM11.4885 1.32716H17.5121C17.6643 1.32716 17.7879 1.5622 17.7879 1.853C17.7879 2.14379 17.6643 2.37993 17.5121 2.37993H11.4885C11.3352 2.37993 11.2137 2.14379 11.2137 1.853C11.2137 1.5622 11.3352 1.32716 11.4885 1.32716ZM14.5003 27.8431C13.7574 27.8431 13.1529 27.2178 13.1529 26.4481C13.1529 25.6785 13.7574 25.0554 14.5003 25.0554C15.2411 25.0554 15.8456 25.6785 15.8456 26.4481C15.8456 27.2178 15.2411 27.8431 14.5003 27.8431ZM21.1294 23.0668H7.87008V3.68741H21.1294V23.0668Z' fill='%23C6C6C6'/%3E%3C/svg%3E%0A")
+				width: 17px
+				height: 30px
+				background-size: cover
+				background-position: center
+				background-repeat: no-repeat
+				left: 10px
+
+		&-mail
+			&::before
+				background-image: url("data:image/svg+xml,%3Csvg width='29' height='28' viewBox='0 0 29 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28.9779 6.03178C28.9779 5.99978 29.0007 5.96864 28.9992 5.93701L20.1494 14.1702L28.9886 22.1404C28.9938 22.0835 28.9779 22.0261 28.9779 21.9679V6.03178Z' fill='%23C6C6C6'/%3E%3Cpath d='M18.8006 15.4365L15.1879 18.7926C15.0051 18.9624 14.769 19.0476 14.5327 19.0476C14.3014 19.0476 14.0701 18.9661 13.8885 18.8027L10.2856 15.5611L1.38867 23.841C1.605 23.9161 1.83721 23.9743 2.08038 23.9743H26.9852C27.3463 23.9743 27.685 23.8681 27.9794 23.7098L18.8006 15.4365Z' fill='%23C6C6C6'/%3E%3Cpath d='M14.521 16.8793L28.0271 4.31771C27.7213 4.14217 27.3653 4.02441 26.9838 4.02441H2.07902C1.58222 4.02441 1.12701 4.21066 0.772461 4.49471L14.521 16.8793Z' fill='%23C6C6C6'/%3E%3Cpath d='M0 6.33789V21.9679C0 22.1473 0.0427119 22.3203 0.0890776 22.4856L8.87564 14.3161L0 6.33789Z' fill='%23C6C6C6'/%3E%3C/svg%3E%0A")
+				width: 29px
+				height: 28px
+				background-size: cover
+				background-position: center
+				background-repeat: no-repeat
+				left: 6px
+		&-address
+			&::before
+				background-image: url("data:image/svg+xml,%3Csvg width='22' height='29' viewBox='0 0 22 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.9243 0C4.9008 0 0 4.9008 0 10.9243C0 13.308 0.752935 15.573 2.17925 17.4732L10.2509 28.3443C10.2711 28.3707 10.3019 28.3808 10.3243 28.4043C10.7276 28.8362 11.3097 28.7275 11.5971 28.3443C13.9214 25.243 18.1819 19.4508 19.82 17.266C19.82 17.266 19.8206 17.2643 19.8211 17.2632L19.8312 17.2497C21.1511 15.3954 21.8486 13.2083 21.8486 10.9243C21.8486 4.9008 16.9478 0 10.9243 0ZM10.9243 16.8178C7.68117 16.8178 5.03077 14.1674 5.03077 10.9243C5.03077 7.68116 7.68117 5.03077 10.9243 5.03077C14.1674 5.03077 16.8178 7.68116 16.8178 10.9243C16.8178 14.1674 14.1674 16.8178 10.9243 16.8178Z' fill='%23C6C6C6'/%3E%3C/svg%3E%0A");
+				width: 22px
+				height: 29px
+				background-size: cover
+				background-position: center
+				background-repeat: no-repeat
+				left: 8px
+
+.case-main
+	padding-top: 147px
+	padding-bottom: 109px
+	background: url('../img/case-mainBG.png')
+	background-size: cover
+	&-content
+		max-width: 754px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	&__logo
+		margin-bottom: 34px
+	.title-default-block
+		margin-bottom: 74px
+	.reviews
+		&-item
+			background: #fff
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			border-radius: 30px
+			padding: 50px
+			padding-top: 66px
+			margin-bottom: 40px
+			position: relative
+			&__avatar
+				position: absolute
+				right: 50px
+				top: -15%
+			&__title
+				margin-bottom: 10px
+			&__text
+				margin-bottom: 15px
+			&__name
+				margin-bottom: 6px
+			&__position
+				color: $yellow
+
+.case-tasks
+	padding: 165px 0
+	background: url('../img/case-tasksBG.png')
+	background-size: cover
+	&-content
+		display: flex
+		flex-direction: column
+		align-items: center
+		max-width: 750px
+	&-list
+		margin-bottom: 26px
+		&__item
+			padding-left: 15px
+			position: relative
+			&:before
+				content: ''
+				width: 8px
+				height: 8px
+				position: absolute
+				left: 0
+				top: 8px
+				background: $yellow
+				border-radius: 100%
+	&-video
+		width: 100%
+		height: 400px
+		border-radius: 30px
+		overflow: hidden
+.case-decision
+	padding-top: 166px
+	padding-bottom: 145px
+	&-content
+		display: flex
+		flex-direction: column
+		align-items: center
+		max-width: 1090px
+	&-list
+		&__item
+			display: flex
+			margin-left: 130px
+			height: 200px
+			border: 1px solid #EEEEEE
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			border-radius: 10px
+			margin-bottom: 28px
+			position: relative
+			&:before
+				position: absolute
+				left: -150px
+				color: #eeeeee
+				top: 50%
+				transform: translateY(-50%)
+				font-weight: 900
+				font-size: 160px
+			&:nth-child(1)
+				&:before
+					content: '1'
+			&:nth-child(2)
+				&:before
+					content: '2'
+			&:nth-child(3)
+				&:before
+					content: '3'
+			&:nth-child(4)
+				&:before
+					content: '4'
+		&__img-block
+			height: 100%
+			min-width: 260px
+			overflow: hidden
+			border-radius: 10px 0 0 10px
+			position: relative
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+			&:after
+				content: ''
+				position: absolute
+				right: 0
+				top: 0
+				background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+				height: 100%
+				width: 50%
+		&__text
+			padding: 37px 30px
+		&__title
+			margin-bottom: 15px
+
+.case-results
+	padding-top: 156px
+	padding-bottom: 116px
+	background: url('../img/case-resultsBG.png')
+	background-size: cover
+
+	&-content
+		display: flex
+		flex-direction: column
+		align-items: center
+	.title-default-block
+		margin-bottom: 35px
+		&__title
+			text-align: center
+		&__desc
+			max-width: 800px
+	&-list
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 50px
+		&__item
+			background: #FFFFFF
+			border: 1px solid #EEEEEE
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			border-radius: 30px
+			width: 31%
+			padding: 40px 55px
+			margin: 0 1%
+			margin-bottom: 20px
+		&__title
+			font-weight: 900
+			font-size: 40px
+			line-height: 50px
+			color: $yellow
+			margin-bottom: 4px
+.cases-similar
+	padding-top: 140px
+	padding-bottom: 210px
+	background: url('../img/cases-similarBG.png')
+	background-size: cover
+	&-content
+		position: relative
+	&-slider
+		.slick-slide
+			padding: 50px 20px
+		.slick-custom-arrow-wrap-right
+			bottom: -50px
+			top: auto
+			left: 120px
+			transform: translateY(0)
+		.slick-custom-arrow-wrap-left
+			bottom: -50px
+			top: auto
+			left: 20px
+			transform: translateY(0) rotate(180deg)
+		&__item
+			border: 1px solid #EEEEEE
+			background: #fff
+			border-radius: 30px
+			max-width: 360px
+			overflow: hidden
+			margin-bottom: 40px
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+		&__img-block
+			width: 100%
+			position: relative
+			height: 50%
+			&::after
+				content: ''
+				width: 100%
+				height: 50%
+				position: absolute
+				background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+				left: 0
+				bottom: 0
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%
+		&__title,&__desc,&__footer
+			padding: 0 23px
+			margin-bottom: 20px
+
+		&__footer
+			display: flex
+			align-items: center
+			justify-content: space-between
+	.yellow-btn
+		position: absolute
+		right: 20px
+		bottom: -50px
+.btn-comparison
+	font-weight: 600
+	font-size: 16px
+	line-height: 26px
+	text-align: center
+	color: $yellow
+	margin: 0 auto
+	display: block
+	text-decoration: underline
+	cursor: pointer
+
+.packages
+	&-main
+		background: url('../img/packages-mainBG.png')
+		background-size: cover
+		padding-top: 230px
+		padding-bottom: 100px
+		&__cards-block
+			display: flex
+			justify-content: space-between
+			margin-bottom: 65px
+		.title-default-block
+			margin-bottom: 132px
+			&__desc
+				margin-bottom: 34px
+	&-card
+		background: #fff
+		border: 1px solid #EEEEEE
+		box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+		border-radius: 10px
+		width: 23%
+		padding: 14px 12px
+		padding-bottom: 64px
+		position: relative
+		&:hover .packages-card__icon-bg
+			background: $yellow
+			transition: .3s
+		&:hover .packages-card__icon
+			display: none
+
+		&:hover .packages-card__icon-hover
+			display: block
+
+		&__head
+			display: flex
+			justify-content: space-between
+			position: relative
+			margin-bottom: 17px
+
+		&__level-dark
+			display: none
+
+		&__icon
+			&-wrap
+				background: #F2F2F2
+				width: 140px
+				height: 140px
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 50%
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				top: -90px
+			&-bg
+				background: #fff
+				border: 1px solid #EEEEEE
+				box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+				width: 110px
+				height: 110px
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 50%
+				transition: .3s
+		&__title
+			font-weight: 900
+			text-align: center
+			margin-bottom: 17px
+		&__desc
+			text-align: center
+			margin-bottom: 17px
+		&__price
+			font-weight: bold
+			font-size: 30px
+			line-height: 38px
+			text-align: center
+			margin-bottom: 18px
+			color: #FFC200
+		&__list
+			padding: 0 24px
+			&-item
+				margin-bottom: 11px
+				margin-left: 12px
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.06334 6.98869C2.98698 7.06551 2.88279 7.10836 2.77456 7.10836C2.66634 7.10836 2.56215 7.06551 2.48578 6.98869L0.179506 4.68204C-0.0598353 4.4427 -0.0598353 4.05459 0.179506 3.8157L0.468286 3.52685C0.707702 3.2875 1.09536 3.2875 1.3347 3.52685L2.77456 4.96678L6.66528 1.07599C6.9047 0.836649 7.29273 0.836649 7.5317 1.07599L7.82048 1.36485C8.05982 1.60419 8.05982 1.99222 7.82048 2.23119L3.06334 6.98869Z' fill='%23FFC200'/%3E%3C/svg%3E%0A")
+					width: 8px
+					height: 7px
+					background-repeat: no-repeat
+					left: -12px
+					top: 5px
+				span
+					font-weight: bold
+
+		&__icon-hover
+			display: none
+
+.packages-command
+	padding: 140px 0
+	background: url('../img/packages-commandBG.png')
+	background-size: cover
+	.title-default-block
+		margin-bottom: 48px
+	&-list
+		display: flex
+		margin-bottom: 42px
+		justify-content: space-between
+		&__icon-block
+			width: 86px
+			height: 86px
+			background: #FFFFFF
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			border-radius: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 36px
+			transition: .3s
+		&__item
+			width: 23%
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding: 33px 15px
+			padding-bottom: 72px
+			transition: .3s
+			text-align: center
+			&:hover
+				background: #FFFFFF
+				box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+				border-radius: 30px
+				transition: .3s
+				& .packages-command-list__icon-block
+					box-shadow: none
+					background: rgba(255, 194, 0, .1)
+					transition: .3s
+		&__title
+			margin-bottom: 10px
+
+	.yellow-btn
+		margin: 0 auto
+
+.packages-detail
+	background: url('../img/packages-detailsBG.png')
+	background-size: cover
+	padding: 150px 0
+	.title-default-block
+		margin-bottom: 35px
+	.table-wrap
+		overflow-x: auto
+	&-table
+		border-collapse: collapse
+		border-radius: 30px 30px 2px 2px
+		overflow: hidden
+		background: #FFFFFF
+		border: 1px solid #EEEEEE
+		box-sizing: border-box
+		box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+		td
+			border-right: 1px solid #EEEEEE
+			padding: 22px
+			&:last-child
+				border-right: 0
+		thead
+			background: #FFFFFF
+			border: 1px solid #EEEEEE
+			box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.07)
+			.td-head
+				display: flex
+				flex-direction: column
+				align-items: center
+				&__header
+					display: flex
+					justify-content: space-between
+					align-items: center
+					margin-bottom: 20px
+				&__level
+					max-width: 30px
+					&-dark
+						display: none
+						max-width: 30px
+				&__title
+					margin-bottom: 6px
+				&__price
+					color: $yellow
+					font-weight: bold
+					font-size: 18px
+					margin-bottom: 6px
+				.packages-card__icon-bg
+					width: 90px
+					height: 90px
+					padding: 20px
+					margin: 0 18px
+				.btn-application
+					position: static
+					transform: translate(0)
+					width: 168px
+					height: 41px
+					font-size: 12px
+					box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.07)
+		.tr_title
+			background: #FFFAE8
+			td
+				border-right: 0
+
+.error
+	background: url(../img/error-pageBG.png)
+	background-position-x: center
+	background-size: cover
+	&-content
+		padding-top: 290px
+		padding-bottom: 200px
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		&__title
+			font-weight: bold
+			font-size: 288px
+			line-height: 288px
+			color: #2C2C2C
+			margin-bottom: 41px
+		&__desc
+			font-size: 24px
+			line-height: 30px
+			text-align: center
+			margin-bottom: 38px
+
+.about-main
+	background: url('../img/about-mainBG.png')
+	background-size: cover
+	padding-top: 290px
+	padding-bottom: 180px
+	display: flex
+	justify-content: space-between
+	position: relative
+	min-height: 1000px
+	.title-default-block
+		&__title
+			margin-bottom: 10px
+		&__desc
+			margin-bottom: 15px
+		.tumbler
+			margin-left: 0
+			.on-off-toggle__slider
+				margin-left: 0
+
+	.about-rock
+		position: absolute
+		right: 3%
+		bottom: 0
+	.rock-dark
+		display: none
+
+	.btn-block
+		display: flex
+	.yellow-btn
+		margin-right: 30px
+
+.about
+	&-goals
+		padding: 175px 0
+		background: url('../img/about-goalsBG.png')
+		background-size: cover
+		&-content
+			display: flex
+			flex-direction: column
+			align-items: center
+			.title-default-block
+				margin-bottom: 80px
+	&-review
+		background: #fff
+		box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+		border-radius: 30px
+		padding: 50px
+		padding-top: 66px
+		margin-bottom: 50px
+		position: relative
+		max-width: 750px
+		&__avatar
+			position: absolute
+			right: 50px
+			top: -15%
+		&__title
+			margin-bottom: 10px
+		&__text
+			margin-bottom: 15px
+		&__name
+			margin-bottom: 6px
+		&__position
+			color: $yellow
+
+.about-numeral
+	padding: 130px 0
+	background: url('../img/about-numeralBG.png')
+	background-size: cover
+	.title-default-block
+		margin-bottom: 120px
+	&-list
+		display: flex
+		margin-bottom: 60px
+		justify-content: space-between
+		&__num
+			font-weight: 900
+			font-size: 48px
+			line-height: 49px
+			text-align: center
+			color: $yellow
+			&-block
+				background: #FFFBF0
+				border-radius: 20px
+				padding: 15px
+				margin-bottom: 15px
+		&__item
+			width: 30%
+			max-width: 362px
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding: 60px 35px
+			text-align: center
+			background: #FFFFFF
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			border-radius: 30px
+			& .packages-command-list__icon-block
+				box-shadow: none
+				background: rgba(255, 194, 0, .1)
+				transition: .3s
+		&__title
+			margin-bottom: 10px
+	.yellow-btn
+		margin: 0 auto
+
+.about-command
+	padding: 156px 0
+	background: url('../img/about-commandBG.png')
+	background-size: cover
+	&-content
+		position: relative
+	.slick-slide
+		padding: 100px 20px
+	&-slider
+		.slick-custom-arrow-wrap-right
+			bottom: 0px
+			top: auto
+			left: 120px
+			transform: translateY(0)
+		.slick-custom-arrow-wrap-left
+			bottom: 0px
+			top: auto
+			left: 20px
+			transform: translateY(0) rotate(180deg)
+		&__item
+			position: relative
+			max-width: 262px
+			min-height: 200px
+			background: #FFFFFF
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			border-radius: 20px
+			padding: 0 15px
+			padding-top: 80px
+			padding-bottom: 34px
+			text-align: center
+		&__avatar
+			width: 136px
+			height: 136px
+			border: 3px solid $yellow
+			border-radius: 50%
+			filter: drop-shadow(0px 25px 30px rgba(0, 0, 0, 0.07))
+			overflow: hidden
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			top: -70px
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%
+		&__title
+			font-weight: 900
+			font-size: 20px
+			margin-bottom: 6px
+		&__position
+			color: $yellow
+			margin-bottom: 9px
+		&__desc
+			color: rgba(33%, 33%, 33%, .8)
+
+	.yellow-btn
+		position: absolute
+		right: 0
+		bottom: 0px
+
+.service-item
+	&-main
+		background: url('../img/about-mainBG.png')
+		background-size: cover
+		padding-top: 200px
+		padding-bottom: 180px
+		background-attachment: fixed
+		box-shadow: inset 0px -45px 65px 0px rgba(250, 250, 250, 1)
+		.title-default-block
+			&__title
+				margin-bottom: 10px
+			&__desc
+				margin-bottom: 15px
+			.tumbler
+				margin-left: 0
+				.on-off-toggle__slider
+					margin-left: 0
+		.btn-block
+			display: flex
+		.yellow-btn
+			margin-right: 30px
+		&-content
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+.service-start
+	padding: 130px 0
+	background: url('../img/about-numeralBG.png')
+	background-size: cover
+	.title-default-block
+		margin-bottom: 120px
+	&-list
+		display: flex
+		margin-bottom: 60px
+		justify-content: space-between
+		&__img
+			&-block
+				background: #FFFBF0
+				border-radius: 50%
+				padding: 15px
+				margin-bottom: 15px
+		&__item
+			width: 30%
+			max-width: 362px
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding: 60px 35px
+			text-align: center
+			background: #FFFFFF
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			border-radius: 30px
+			& .packages-command-list__icon-block
+				box-shadow: none
+				background: rgba(255, 194, 0, .1)
+				transition: .3s
+		&__title
+			margin-bottom: 10px
+	.yellow-btn
+		margin: 0 auto
+
+.service-analytic
+	padding: 200px 0
+	background: url('../img/service-analyticBG.png')
+	background-size: cover
+	&-content
+		display: flex
+		justify-content: space-between
+	&-info
+		width: 50%
+		padding-top: 50px
+		&__title
+			font-weight: 900
+			font-size: 40px
+			line-height: 48px
+			span
+				display: block
+				margin-bottom: 30px
+		&__sub-title
+			margin-bottom: 10px
+		&__list
+			margin-bottom: 33px
+			&-item
+				margin-bottom: 20px
+				margin-left: 42px
+				position: relative
+				&::before
+					background: #FFFFFF
+					box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+					border-radius: 50%
+					width: 28px
+					height: 28px
+					display: flex
+					align-items: center
+					justify-content: center
+					top: 50%
+					transform: translateY(-50%)
+					color: $yellow
+					font-weight: bold
+					font-size: 16px
+					line-height: 22px
+					position: absolute
+					left: -42px
+				&:nth-last-child(1)
+					&::before
+						content: 'A'
+				&:nth-last-child(2)
+					&::before
+						content: 'B'
+				&:nth-last-child(3)
+					&::before
+						content: 'C'
+				&:nth-last-child(4)
+					&::before
+						content: 'D'
+				&:nth-last-child(5)
+					&::before
+						content: 'E'
+		&__desc
+			margin-bottom: 40px
+
+body.dark
+	color: #fff
+	.text_gray
+		color: #eeeeee
+	.btn-application
+		background: #2E2E2E
+		border: 1px solid #FFC200
+		box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+		transition: .3s
+		&:hover
+			background: #FFC200
+			transition: .3s
+
+	.title-default-block
+		&__desc
+			color: #fff
+
+	.slick-custom-arrow
+		background-image: url("data:image/svg+xml,%3Csvg width='23' height='14' viewBox='0 0 23 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.3137 6.03471L22.3127 6.03367L16.5713 0.319964C16.1412 -0.10807 15.4455 -0.106477 15.0174 0.3237C14.5893 0.753821 14.5909 1.44952 15.0211 1.87761L18.8758 5.7137H1.46598C0.859116 5.7137 0.367188 6.20563 0.367188 6.81249C0.367188 7.41935 0.859116 7.91128 1.46598 7.91128H18.8758L15.0211 11.7474C14.591 12.1755 14.5893 12.8712 15.0174 13.3013C15.4456 13.7315 16.1413 13.733 16.5714 13.305L22.3128 7.59131L22.3138 7.59027C22.7441 7.16075 22.7428 6.4628 22.3137 6.03471Z' fill='white'/%3E%3C/svg%3E%0A")
+		&-wrap
+			background: #2E2E2E
+
+	.main
+		background: url('../img/mainBG-dark.png')
+		background-size: cover
+
+		&__title
+			display: none
+		&__title_dark
+			display: block
+
+	.services,
+	.choice
+		background: url('../img/servicesBG-dark.png')
+		background-size: cover
+		&-list
+			&__item
+				background: #232323
+				border: 1px solid #353535
+				&:hover
+					border: 1px solid #353535
+					border-bottom: 10px solid $yellow
+
+	.marketing
+		background: url('../img/marketingBG-dark.png')
+		background-size: cover
+
+		&-list__item
+			background: #232323
+			border: 1px solid #353535
+			&.active
+				border-bottom: 10px solid $yellow
+
+	.choice
+		background: url('../img/choiceBG-dark.png')
+		background-size: cover
+		&-list__item
+			border: 1px solid #353535
+			&.active
+				border-bottom: 10px solid $yellow
+
+	.reviews
+		background: url('../img/reviewsBG-dark.png')
+		background-size: cover
+
+		&-slider
+			&__item
+				background: #232323
+			&__text
+				&::after
+					background: linear-gradient(0deg, rgba(35,35,35,1) 0%, rgba(255,255,255,0) 100%)
+
+	.cases
+		background: url('../img/casesBG-dark.png')
+		background-size: cover
+		&-slider__text::after
+			background: linear-gradient(0deg, rgba(35,35,35,1) 0%, rgba(255,255,255,0) 100%)
+	.contacts
+		background: url('../img/contactsBG-dark.png')
+		background-size: cover
+		&-form-block
+			background: #232323
+			input,textarea
+				background: #353535
+				border: 1px #353535
+				&::placeholder
+					color: #fff
+
+	.footer
+		background: #181818
+
+	.cases-page
+		background: url('../img/cases-pageBG-dark.png')
+		background-size: cover
+		&-list-item
+			background: #232323
+			border: 1px solid #353535
+			&__img-block
+				&::after
+					background: linear-gradient(0deg, rgba(35,35,35,1) 0%, rgba(255,255,255,0) 100%)
+
+	.contacts-page
+		&-main-wrap
+			background: url('../img/contacts-pageBG-dark.png')
+			background-size: cover
+		.map-dark
+			display: block
+		.map-white
+			display: none
+		&-second-wrap
+			background: url('../img/contacts-page-secondBG-dark.png')
+			background-size: cover
+
+	.case-main
+		background: url('../img/case-mainBG-dark.png')
+		background-size: cover
+		.reviews-item
+			background: #232323
+			border: 1px solid #353535
+
+	.case-tasks
+		background: url('../img/case-tasksBG-dark.png')
+		background-size: cover
+
+	.case-decision
+		background: url('../img/decisionBG-dark.png')
+		background-size: cover
+		&-list
+			&__item
+				background: #232323
+				border: 1px solid #353535
+				&::before
+					color: #2C2C2C
+			&__img-block:after
+				background: linear-gradient(270deg, rgba(35,35,35,1) 0%, rgba(255,255,255,0) 100%)
+
+	.case-results
+		background: url('../img/case-resultsBG-dark.png')
+		background-size: cover
+		&-list
+			&__item
+				background: #232323
+				border: 1px solid #353535
+				box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+	.cases-similar
+		background: url('../img/cases-similarBG-dark.png')
+		background-size: cover
+		&-slider
+			&__item
+				background: #232323
+				border: 1px solid #353535
+				box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			&__img-block
+				&::after
+					background: linear-gradient(0deg, rgba(35,35,35,1) 0%, rgba(255,255,255,0) 100%)
+
+	.packages
+		&-main
+			background: url('../img/packages-mainBG-dark.png')
+			background-size: cover
+		&-card
+			background: #232323
+			border: 1px solid #353535
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			&__icon
+				&-wrap
+					background: #1E1E1E
+				&-bg
+					background: #232323
+					border: 1px solid #353535
+					box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			&__level
+				display: none
+				&-dark
+					display: block
+
+	.packages-command
+		background: url('../img/packages-commandBG-dark.png')
+		background-size: cover
+		&-list
+			&__item
+				&:hover
+					background: #232323
+					box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			&__icon-block
+				background: #272727
+				box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+
+	.packages-detail
+		background: url('../img/packages-detailBG-dark.png')
+		background-size: cover
+		&-table
+			background: #232323
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			thead
+				background: #232323
+				box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+				border: 0
+			tr:nth-child(2n + 1)
+				background: #262626
+			.tr_title
+				background: #353535 !important
+			td
+				border-right: 1px solid #353535
+			.td-head
+				&__level
+					display: none
+					&-dark
+						display: block
+
+	.about-main
+		background: url('../img/about-mainBG-dark.png')
+		background-size: cover
+		.rock-white
+			display: none
+		.rock-dark
+			display: block
+	.about
+		&-goals
+			background: url('../img/about-goalsBG-dark.png')
+			background-size: cover
+		&-review
+			background: #232323
+			border: 1px solid #353535
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+
+	.about-numeral
+		background: url('../img/about-numeralBG-dark.png')
+		background-size: cover
+		&-list
+			&__item
+				background: #232323
+				border: 1px solid #353535
+				box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			&__num-block
+				background: rgba(255, 194, 0, .06)
+	.about-command
+		background: url('../img/about-commandBG-dark.png')
+		background-size: cover
+		&-slider
+			&__item
+				background: #232323
+				box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			&__desc
+				color: rgba(238, 238, 238, .8)
+
+	.service-item
+		&-main
+			background: url('../img/service-item-mainBG-dark.png')
+			background-size: cover
+
+	.service-start
+		background: url('../img/service-startBG-dark.png')
+		background-size: cover
+		&-list
+			&__item
+				background: #232323
+				border: 1px solid #353535
+				box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)
+			&__img-block
+				background: rgba(255, 194, 0, .06)
+	.service-analytic
+		background: url('../img/service-analyticBG-dark.png')
+		background-size: cover
+		&-info__list-item::before
+			background: #232323
+			box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.07)

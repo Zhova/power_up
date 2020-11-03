@@ -1,0 +1,47 @@
+mixin contacts-page
+    +b.contacts-page-main-wrap.wrap
+        +b.contacts-page-content.container
+            +b.contacts-page-main
+                +b.title-default-block.contacts-page-title
+                    +e.P.title Наши-#[span контакты]
+                    +e.P.desc Успешные кейсы с конкретным описанием пошаговых действий. Рассказываем о комплексном применении маркетинговых инструментов и достижении поставленных целей.
+                    +b.tumbler 
+                        input#bopis.on-off-toggle__input(type='checkbox')
+                        label.on-off-toggle__slider(for='bopis')
+                        +e.P Switch On
+                +b.contacts-page__img-block
+                    img.map-white(src="./img/map-white.png", alt="")
+                    img.map-dark(src="./img/map-dark.png", alt="")
+    +b.contacts-page-second-wrap.wrap
+        +b.contacts-page-second-content.container
+            +b.contacts-page__form-info
+                +b.contacts-form-block
+                    +e.P.title Оставить заявку
+                    +b.FORM.form
+                        +e.LABEL.label-name.text_regulaar Ваше имя
+                        +e.INPUT.name(type="text" placeholder="Введите ваше имя")
+                        +e.LABEL.label-tel.text_regulaar Ваш телефон
+                        +e.INPUT.phone(type="tel" placeholder="+380 xx xx xxx")
+                        +e.LABEL.label-emeil.text_regulaar Укажите свой e-mail
+                        +e.INPUT.mail(type="email" placeholder="emailexample@gmail.com")
+                        +e.LABEL.label-emeil.text_regulaar Коротко опишите задачу
+                        +e.TEXTAREA(placeholder="Опишите вашу проблему")
+                        +e.INPUT#send-btn(type="submit" value="ОТПРАВИТЬ ЗАЯВКУ") 
+                +b.contacts-info-block
+                    +b.title-default-block.contacts-info-block-title
+                        +e.P.title Контактная #[span информация]
+                    +e.item.contacts-info-tel
+                        +e.P.title.title_micro Телефон
+                        +e.P.info.text_regulaar +38 (067) 352-62-62
+                    +e.item.contacts-info-mail
+                        +e.P.title.title_micro E-mail
+                        +e.P.info.text_regulaar roman@powerup.com.ua
+                    +e.item.contacts-info-address
+                        +e.P.title.title_micro Адрес
+                        +e.P.info.text_regulaar Украина, г. Киев, 01024, ул. Филиппа Орлика 6
+                    +b.A.contacts-info-facebook(href="#")
+                        img(src="./img/facebook.svg" title.title_small="facebook" alt="facebook")
+                    
+                  
+            +b.contacts-page__map-block
+                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d825357.3735790536!2d-113.40361247408127!3d36.09221455154305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC_0LDRgNC6INCT0YDQsNC90LQg0JrQsNC90YzQvtC9!5e0!3m2!1sru!2sua!4v1601982478545!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")

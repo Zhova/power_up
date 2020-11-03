@@ -1,0 +1,29 @@
+mixin main_screen 
+	+b.main.wrap
+		+b.main-content.container
+			+b.IMG.main__title(src="./img/power-up.svg")
+			+b.IMG.main__title_dark(src="./img/power-up-dark.svg")
+			+b.main__second-block
+				+b.main__sub-block
+					+b.P.main__sub-title #[span online marketing ] agency
+					+b.main__btn-block
+						+b.A.yellow-btn(href="") Обсудить задачу
+						+b.tumbler 
+							input#bopis.on-off-toggle__input(type='checkbox')
+							label.on-off-toggle__slider(for='bopis')
+							+e.P Switch On
+				+b.main__lamp-block
+					+e.IMG.lamp_yellow.lamp(src="./img/lamp.png" alt="lamp")
+					+e.IMG.lamp_white.lamp(src="./img/lamp-white.png" alt="lamp")
+					+e.A.video-link(href="#")
+
+			+b.partner-slider
+				+e.IMG.item(src="./img/partner.png" alt="alt")
+				+e.IMG.item(src="./img/partner.png" alt="alt")
+				+e.IMG.item(src="./img/partner.png" alt="alt")
+				+e.IMG.item(src="./img/partner.png" alt="alt")
+				+e.IMG.item(src="./img/partner.png" alt="alt")
+				+e.IMG.item(src="./img/partner.png" alt="alt")
+				+e.IMG.item(src="./img/partner.png" alt="alt")
+
+				
